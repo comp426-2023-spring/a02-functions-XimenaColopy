@@ -44,7 +44,15 @@ if (args.d!=null) {
 }
 
 // Make a request
-const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+lon+'&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_sum,precipitation_hours,windspeed_10m_max,windgusts_10m_max,winddirection_10m_dominant&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone='+timezone);
+var url = 'https://api.open-meteo.com/v1/forecast?latitude='
++lat
++'&longitude='
++lon
++'&timezone='
++timezone
++'&daily=precipitation_hours';
+//console.log(url)
+const response = await fetch(url);
 
 // Get the data from the request
 const data = await response.json()
