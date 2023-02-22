@@ -45,6 +45,7 @@ if (args.z){
     timezone = args.z;
 } else {timezone = moment.tz.guess()}
 
+
 var days = 1;
 if (args.d<0 || args.d>6){
     console.log('ERROR: Day option -d must be 0-6.');
@@ -87,6 +88,6 @@ if (days == 0) {
 } else {
   console.log("tomorrow.")
 }
-if (console.log(precipitation_hours[days] = 0){
-    console.log("You will not need your galoshes ");
-} else {console.log("You might need your galoshes ");)}
+if (days<0 || days<precipitation_hours.length){
+    console.log(precipitation_hours[days])
+}
