@@ -1,0 +1,28 @@
+{
+  "name": "a02-functions-ximenacolopy",
+  "version": "1.0.0",
+  "description": "this is the a02 description",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-XimenaColopy.git"
+  },
+  "author": "XimenaColopy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-XimenaColopy/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-XimenaColopy#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "moment-timezone": "^0.5.40",
+    "node-fetch": "^3.3.0"
+  }
+}
