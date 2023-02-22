@@ -25,13 +25,13 @@ if (args.h){
     }
 
 
-var lat;
-if (args.n!=null){ lat = Math.round(args.n*100)/100}
-else if (args.s!=null){ lat = -Math.round(args.s*100)/100}
+var lat=0;
+if (args.n){ lat = Math.round(args.n*100)/100}
+else if (args.s){ lat = -Math.round(args.s*100)/100}
 
-var lon;
-if (args.e!=null){lon = Math.round(args.e*100)/100}
-else if (args.w!=null){lon = -Math.round(args.w*100)/100}
+var lon=0;
+if (args.e){lon = Math.round(args.e*100)/100}
+else if (args.w){lon = -Math.round(args.w*100)/100}
 
 var timezone;
 if (args.z){
